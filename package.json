@@ -1,8 +1,13 @@
 {
   "name": "status-clock",
+  "publisher": "Elleyes",
   "displayName": "status-clock",
   "description": "Clock in the status bar :)",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jakeleslie/Visual-Studio-Status-Clock"
+  },
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -16,11 +21,54 @@
   "contributes": {
     "commands": [
       {
-        "command": "status-clock.helloWorld",
-        "title": "Hello World"
+        "command": "status-clock.leftSide",
+        "title": "Put clock on left side",
+        "category": "Status Clock"
+      },
+      {
+        "command": "status-clock.rightSide",
+        "title": "Put clock on right side",
+        "category": "Status Clock"
+      },
+      {
+        "command": "status-clock.noEmojiLeft",
+        "title": "Clock on left side w/ no emoji",
+        "category": "Status Clock"
+      },
+      {
+        "command": "status-clock.noEmojiRight",
+        "title": "Clock on right w/ no emoji",
+        "category": "Status Clock"
+      },
+      {
+        "command": "status-clock.noSecondsLeft",
+        "title": "clock on left w/ no seconds",
+        "category": "Status Clock"
+      },
+      {
+        "command": "status-clock.noSecondsRight",
+        "title": "clock on left w/ no seconds",
+        "category": "Status Clock"
+      },
+      {
+        "command": "status-clock.noSecondsNoEmojiLeft",
+        "title": "clock on left w/ no seconds or emoji",
+        "category": "Status Clock"
+      },
+      {
+        "command": "status-clock.noSecondsNoEmojiRight",
+        "title": "clock on right w/ no seconds or emoji",
+        "category": "Status Clock"
       }
     ]
   },
+  "configuration": {
+    "title": "Status Clock",
+    "properties": {
+      
+    }
+  },
+  
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
